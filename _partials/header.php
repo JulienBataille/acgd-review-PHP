@@ -1,6 +1,6 @@
-<header class="sticky-top" style="background-color: #434343;">
-		<nav class="navbar navbar-expand-xl">
-		  <div class="container-fluid align-items-center">
+<header class="sticky-top bg-grey">
+		<nav class="navbar navbar-expand-xl ">
+		  <div class="container-fluid align-items-center ">
 			<a class="navbar-brand" href="index.php">
 			  <img src="./assets/image/areview-header.png" alt="LOGO" width="200" height="100%">
 			</a>
