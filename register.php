@@ -12,6 +12,8 @@
         $email = $_POST['email'];
         $password = $_POST['password'];
         $birth_date = $_POST['birth_date'];
+        
+        
 
         // je verifie si l'email existe deja dans la base de donnees    
         $sql = "SELECT email FROM user WHERE email = :email";
@@ -65,33 +67,35 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-</head>
+<?php include ('_partials/head.php') ?>
 <body>
+<?php include ('_partials/header.php') ?>
     <h1>Register</h1>
     <p><?= $message ?></p>
-    <form action="register.php" method="post">
-        <div>
-            <label for="pseudo">pseudo</label>
-            <input type="text" name="pseudo">
+    <div class="my-5">
+    <form action="register.php" method="post" class="row col-xl-6 mx-auto">
+        <div class="col-12 mb-4">
+            <label for="pseudo" class="form-label">Pseudo</label>
+            <input type="text" name="pseudo" class="form-control">
         </div>
-        <div>
-            <label for="email">email</label>
-            <input type="text" name="email">
+        <div class="col-12 mb-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" name="email" class="form-control">
         </div>
-        <div>
-            <label for="password">password</label>
-            <input type="password" name="password">
+        <div class="col-12 mb-4">
+            <label for="password" class="form-label">Mot de passe</label>
+            <input type="password" name="password" class="form-control">
         </div>
-        <div>
-            <label for="birth_date">birth date</label>
-            <input type="date" name="birth_date">
-        <div>
-    <button type="submit">Register</button>
+        <div class="col-12 mb-4"> 
+            <label for="birth_date" class="form-label">Date de naissance</label>
+            <input type="date" name="birth_date" class="form-control">
+        </div>
+        <div class="col-12 my-5 text-center">
+            <button type="submit" class="btn btn-primary" id="bouton_orange">S'inscrire</button>
+        </div>
 
     </form>
+    </div>
 </body>
+<?php include ('_partials/footer.php') ?>
 </html>

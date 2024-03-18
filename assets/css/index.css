@@ -76,5 +76,5 @@ footer #lien:hover{
 }
 
 .gris{
-  background-color: #434343;
+  background-color: var(--grey);
 }

@@ -82,7 +82,7 @@
 			</div>
 			<div class="row my-1 text-center">
 			  <p>Vous n'avez pas encore de compte ? <br> Rejoignez-nous !</p>
-			  <a href="login.php"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
+			  <a href="register.php"><button class="btn" type="submit" id="bouton_orange"> S'inscrire </button> </a>
 			</div>
 		  </div>
 		</div>
