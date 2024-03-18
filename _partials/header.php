@@ -1,4 +1,4 @@
-<header class="sticky-top bg-grey">
+<header class="gris sticky-top">
 		<nav class="navbar navbar-expand-xl ">
 		  <div class="container-fluid align-items-center ">
 			<a class="navbar-brand" href="index.php">
